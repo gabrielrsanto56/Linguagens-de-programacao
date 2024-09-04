@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Midias</title>
+</head>
+<body>
+    <h1>foto</h1>
+    <!--para colocar uma foto no html se usa a tag <img>, dentro da tag se usa src="" o que vai entre as aspas é o caminho da imagem. É sempre bom colocar um alt="" e colocar uma palavra que descreva a foto para que caso a imagem não carregue apareça essa mensagem-->
+    <img src="imagem.jpg" alt="foto" width="500px" height="400px">
+    <h1>video local</h1>
+    <!--para colocar um video local (que está na sua máquina) se usa a tag <video></video>, onde entro da tag se coloca o atributo controls para aparecer os controles do video e loop para o video recomeçar automaticamente. Dentro da tag video se coloca o caminho com a tag <source src="">-->
+    <video controls width="500px" height="400px" loop>
+        <source src="video.mp4">
+    </video>
+    <!--caso queira colocar um video do youtube em compartilhar vai aparecer a opção incorporar, onde basta copiar e colar o código no seu html-->
+    <h1>video do youtube</h1>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/Ejkb_YpuHWs?si=A2rtHyPpNgPyQYna" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+</body>
+</html>
