@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>classes e id</title>
+    <style>
+        /*para chamar um id se usa #nome_id e uma classe se usa .nome_classe. É uma boa pratica não repetir ids, enquanto classes se podem repetir quantas vezes forem necessárias*/
+        .filhas{
+            width: 400px; 
+            height: 400px;
+            background-color: aquamarine;
+            margin: 10px 5px 8px 3px; 
+            padding: 10px 5px 8px 3px; 
+            border-radius: 5px; 
+            box-shadow: 5px 3px 10px rgba(0, 0, 0, 0.333); /*faz uma sombra de 5px pra cima e pra baixo, 3 px pros lados e 10px de espaçamento da cor preta com transparencia de 0.333*/   
+            
+        }
+        #container{
+            display: flex; /*modo diferente de display, permitindo fazer manipulações diferentes do que é o padrão*/
+            height: 100vh; /*ocupa toda a altura da pagina*/
+            align-items: center; /*centraliza de forma vertical os itens*/
+            justify-content: center; /*centraliza de forma horizontal os itens*/
+            
+        }   
+    </style>
+</head>
+<body>
+    <!--classes e ids servem para especificar um elemento que se deseja modificar, por exemplo, se colocar apenas div na css ele modifica todas as tags div, porem se atribuir uma classe a uma div especifica apenas essa div será modificada-->
+    <div id="container">
+        <div class="filhas">
+            <h1>texto1</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque ratione cum itaque fugiat veritatis expedita! Excepturi, et aliquam.</p>
+        </div>
+        <div class="filhas">
+            <h1>texto2</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque ratione cum itaque fugiat veritatis expedita! Excepturi, et aliquam.</p>
+        </div>
+        <div class="filhas">
+            <h1>texto3</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque ratione cum itaque fugiat veritatis expedita! Excepturi, et aliquam.</p>
+        </div>
+    </div>
+</body>
+</html>
